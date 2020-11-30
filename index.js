@@ -1,7 +1,7 @@
 var readlineSync = require('readline-sync')
 var chalk = require('chalk')
 
-console.log(chalk.bgBlue.bold("Welcome to the NEOGCAMP BOOTCAMP QUIZ!"));
+console.log(chalk.bgBlue.bold("Welcome to the HARRY POTTER QUIZ!"));
 var userName = readlineSync.question(chalk.bgBlue.bold("Enter your name to begin playing: "))
 console.log(chalk.bgBlue.bold("Let's get started ",userName,"\n Select the correct option for the questions ahead \n You gain a point for correct answer & lose a point for wrong answer\n"))
 
