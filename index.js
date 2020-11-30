@@ -8,54 +8,54 @@ console.log(chalk.bgBlue.bold("Let's get started ",userName,"\n Select the corre
 
 var questions =[
   {
-    question: "On which day did NEOGCAMP lesson 1 start?",
-    options:["On Monday","On Diwali","On Wednesday","On Christmas"],
-    answer: "On Diwali"
+    question: "Who is the author of Harry Potter?",
+    options:["J.K.Rowling","Steve","Henry","Goldilocks"],
+    answer: "J.K.Rowling"
   },
   {
-    question: "How many levels are there in NEOGCAMP? ",
-    options:["3 levels","2 levels","4 levels","5 levels"],
-    answer: "2 levels"
+    question: "How many total Harry Potter books are there? ",
+    options:["3","2","4","7"],
+    answer: "7"
   },
    {
-    question: "Who can participate in this BOOTCAMP? ",
-    options:["Everyone","Kids","Superheroes only","Turtles"],
-    answer: "Everyone"
+    question: "Who killed Nagini? ",
+    options:["Ron","Harry","Hermione","Neville"],
+    answer: "Neville"
   },
   {
-    question: "What are the fees to attend level 0 lessons? ",
-    options:["10 Bananas","20 Apples","1 packet cashews","Its FREE!"],
-    answer: "Its FREE!"
+    question: "Snape was the headmaster of which house? ",
+    options:["Griffindor","Slytherin","Hufflepuff","Ravenclaw"],
+    answer: "Slytherin"
   },
   {
-    question: "What do you need to do to qualify to enter level 1?",
-    options:["Complete 8 action points of the 9 point system","Simply attend the lectures","Simply follow the Instagram handle","Its FREE access to level 2"],
-    answer: "Complete 8 action points of the 9 point system"
+    question: "How many Weasely Brothers were there in total?",
+    options:["5","4","6","7","3"],
+    answer: "6"
   },
   {
-    question: "Where do you get all updates about the BOOTCAMP?",
-    options:["Discord Channel","Instagram Handle","Telegram Channel","All of the above"],
-    answer: "All of the above"
+    question: "What was the first horcrux that was destroyed?",
+    options:["Riddle's Diary","Phiilosopher's stone","Diadem","Salazar Slytherine's ring"],
+    answer: "Riddle's Diary"
   },
   {
-    question: "How many Assignments do you need to submit as part of lesson 1",
-    options:["3","1","5","2"],
-    answer: "2"
+    question: "In which book does Professor Snape teach Defence Against the Dark Arts",
+    options:["3","1","5","6"],
+    answer: "6"
   },
   {
-    question: "The duration of level one is for how many weeks?",
-    options:["3","4","5","2"],
-    answer: "4"
+    question: "Who died as a free elf",
+    options:["Toby","Doby","Winky","Tinky"],
+    answer: "Doby"
   },
   {
-    question: "NEOGCAMP's goal is to teach?",
-    options:["Marketing","Machine Learning","Maths","Basics of Programming,Javascript,Git&Github,React & Web Development"],
-    answer: "Basics of Programming,Javascript,Git&Github,React & Web Development"
+    question: "Who betrayed James Potter?",
+    options:["Snape","Peter Pettigrew","Remus Lupin","Sirius"],
+    answer: "Peter Pettigrew"
   },
   {
-    question: "How many toy apps will you end up building as part of level 0",
-    options:["8","4","5","2"],
-    answer: "8"
+    question: "in the 5th book, Who's charachter is more detested than Snape & Voldemort?",
+    options:["Grubby Plank","Hagrid","Minerva","Dolores Umbridge"],
+    answer: "Dolores Umbridge"
 
   }
 
@@ -76,7 +76,7 @@ function play(question,options,answer){
   }
   else{
     score=score-1
-    console.log(chalk.bgRed.bold("That's incorrect! Visit https://neog.camp/ to learn more!"))
+    console.log(chalk.bgRed.bold("That's incorrect!!"))
   }
 }
 
@@ -88,5 +88,5 @@ if(score<highest_score.points){
   console.log(chalk.bgPink.bold("Your Total Score: ",score," is less than the highest score: ",highest_score.points))
 }
 else{
-  console.log(chalk.bgGreen.bold("Congratulations! \nYou are the highest Scorer & are well informed about the NEOGCAMP BOOTCAMP"))
+  console.log(chalk.bgGreen.bold("Congratulations! \nYou are the highest Scorer!"))
 }
